@@ -2,7 +2,7 @@
 //-----------------------------------------------------------
 //-----------------problem 1 och 8---------------------------
 //-----------------------------------------------------------
-document.title = 'Fruits &amp; Vegetables Corp';
+document.title = 'Fruits & Vegetables Corp';
 let vH1 = document.querySelector('h1');
 vH1.textContent = document.title;
 //-----------------------------------------------------------
@@ -26,10 +26,18 @@ vH2about.textContent = 'About';
 vAbout.textContent = "";
 vAbout.appendChild(vH2about);
 //-----------------------------------------------------------
+let contactP = document.querySelector('#contact p');
+let vH2contact = document.createElement('h2');
+vH2contact.textContent = 'Contact';
+vContact.insertBefore(vH2contact,contactP);
+
+
+
+//-----------------------------------------------------------
 //-----------------problem 5---------------------------------
 //-----------------------------------------------------------
 let vPABout = document.createElement('p');
-vPABout.textContent = "We're the best in fruits &amp; vegetables";
+vPABout.textContent = "We're the best in fruits & vegetables";
 vAbout.appendChild(vPABout);
 //-----------------------------------------------------------
 //-----------------problem 6---------------------------------
